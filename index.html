@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- App -->
+    <script defer src="app.js"></script>
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
+    </script>
+    <title>Checkers Game</title>
+</head>
+
+<body>
+
+    <header class="title">
+        <h1 class="display-1">Checkers Game</h1>
+        <p class="lead">
+            Welcome to the Ckeckers game. I Hope you enjoy :)</p>
+    </header>
+    <main>
+        <div class="red-turn-text turn-text mobile">
+            Reds turn
+        </div>
+        <table>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="0"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="1"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="2"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="3"></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="red-piece piece" id="4"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="5"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="6"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="7"></p>
+                </td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="8"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="9"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="10"></p>
+                </td>
+                <td class="noPieceHere"></td>
+                <td>
+                    <p class="red-piece piece" id="11"></p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="black-piece piece" id="12"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="13"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="14"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="15"></span></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="16"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="17"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="18"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="19"></span></td>
+            </tr>
+            <tr>
+                <td><span class="black-piece piece" id="20"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="21"></span></td>
+                <td class="noPieceHere">
+                <td><span class="black-piece piece" id="22"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece piece" id="23"></span></td>
+                <td class="noPieceHere"></td>
+            </tr>
+        </table>
+        <div class="desktop">
+            <div class="red-turn-text turn-text">
+                Reds turn
+            </div>
+            <p id="divider">|</p>
+            <div class="black-turn-text turn-text">
+                Blacks turn
+            </div>
+        </div>
+        <div class="black-turn-text turn-text mobile">
+            Blacks turn
+        </div>
+    </main>
+</body>
+
+</html>
